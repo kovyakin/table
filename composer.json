@@ -1,0 +1,16 @@
+{
+  "name": "kovuakin/table",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "kovyakin",
+      "email": "info@php-developer.ru",
+      "homepage": "https://github.com/kovyakin"
+    }
+  ],
+  "require": {
+    "php": "^8.2"
+  }
+}
