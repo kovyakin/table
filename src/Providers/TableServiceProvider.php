@@ -23,11 +23,11 @@ class TableServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__.'/../config/table_vue.php' => config_path('table_vue.php'),
-            __DIR__.'/../resources/views' => resource_path('views/vendor/table'),
-        ],'table_vue');
-//        Blade::componentNamespace('Kovyakin\\Table\\View\\Components', 'table');
+            __DIR__ . '/../config/table_vue.php' => config_path('table_vue.php'),
+            __DIR__ . '/../resources/views' => resource_path('views/vendor/table'),
+            __DIR__ . '/../public' => public_path('/'),
+        ], 'table_vue');
         Blade::component('package-table', TableComponent::class);
-        $this->loadViewsFrom(__DIR__.'/../resources/views', 'table');
+        $this->loadViewsFrom(__DIR__ . '/../resources/views', 'table');
     }
 }

@@ -12,5 +12,17 @@
   ],
   "require": {
     "php": "^8.2"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kovyakin\\Table\\Providers\\TableServiceProvider"
+      ]
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Kovyakin\\Table\\": "src"
+    }
   }
 }
