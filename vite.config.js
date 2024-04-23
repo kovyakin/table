@@ -7,6 +7,7 @@ export default defineConfig({
     plugins: [
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
+
             refresh:[
                 ...refreshPaths,
                 'app/Livewire/**',
@@ -14,7 +15,8 @@ export default defineConfig({
         }),
         vue(),
     ],
-    build: { chunkSizeWarningLimit: 1600, },
+    build: { chunkSizeWarningLimit: 1600,
+    },
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./resources/js/src', import.meta.url))
