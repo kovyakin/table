@@ -17,7 +17,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body class="font-sans antialiased  ">
-<x-package-table/>
+            <x-package-table/>
 
     </body>
 </html>

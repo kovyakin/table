@@ -2,5 +2,5 @@
 
 return [
     App\Providers\AppServiceProvider::class,
-    \Kovyakin\Table\Providers\TableServiceProvider::class,
+//    \Kovyakin\Table\Providers\TableServiceProvider::class,
 ];
