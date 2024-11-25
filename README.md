@@ -30,14 +30,17 @@ and is added to work with Laravel.
 ## Step by step
 
 - Set .env your data db;
-- php artisan key:generate
-- php artisan migrate
+- composer dump autoload;
+- php artisan key:generate;
+- php artisan migrate;
 - In tinker make:
 
 ```php
 $user=\App\Models\User::factory(100)->create();
 ```
-- go /example
+- log in with your account;
+
+- go /example;
 
 
 
