@@ -28,9 +28,9 @@ and is added to work with Laravel.
 <img src="https://github.com/kovyakin/components/blob/master/docs/images/1.png" alt="image">
 
 ## Step by step
-
+- git clone https://github.com/kovyakin/table.git
+- composer update --no-scripts 
 - Set .env your data db;
-- composer dump autoload;
 - php artisan key:generate;
 - php artisan migrate;
 - In tinker make:
